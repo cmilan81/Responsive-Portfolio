@@ -280,15 +280,24 @@ margin-right: 40px;
 
 #masthead {
   position: static;
+  width: 100%;
 } 
 
 #main-container {
     width: 350px;
     margin: 20px;
-}   
+}
+
+.auth-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 nav {
-  margin: 10px 75px 15px 0px;
+
+  width: 100%;
+  text-align: center;
+  margin: 5px 10px 5px;
 }
 
 #logo {
@@ -303,4 +312,8 @@ nav {
   width: 285px;
   margin: 10px 0px 15px;
   overflow: auto;
+}
+
+.footer {
+  width: 100%;
 }
