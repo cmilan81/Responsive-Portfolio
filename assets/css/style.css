@@ -294,7 +294,6 @@ margin-right: 40px;
 }
 
 nav {
-
   width: 100%;
   text-align: center;
   margin: 5px 10px 5px;
@@ -307,11 +306,8 @@ nav {
 }
 
 .work {
-  position: relative;
-  float: left;
   width: 285px;
   margin: 10px 0px 15px;
-  overflow: auto;
 }
 
 .footer {
