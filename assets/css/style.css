@@ -1,358 +1,305 @@
-/*--Overall Content--*/
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../images/motherboard.png);
-}
-.pageWidth {
-    margin: auto;
-    width: 960px;
-    max-width: 960px;  
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/motherboard.png");
 }
 
-/*---Header---*/
-
-.mainHeader {
-    background-color: white;
-    height: 80px;
-    border-bottom:2.5px solid #dddddd;
+* {
+  box-sizing: border-box;
 }
 
-.spacer {
-    color: #dddddd;
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
 
-.mainTitle {
-    color: white;
-    background-color: #4aaaa5;
-    font-size: 20px;
-    float: left; 
-    padding: 25px 25px;
-    height: 33px;
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
 }
 
-.links {
-    font-size: 16px;
-    float: right;
-    line-height: 80px;
-    width: 250px;
+h2,
+h3 {
+  font-size: 22px;
 }
 
-.top_links:hover {
-    cursor: pointer;
-    color: rgb(83, 216, 214);
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
-.top_links:visited {
-    cursor: pointer;
-    color: rgb(49, 59, 94);
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
 }
 
-.a {
-    color: #4aaaa5;
+nav {
+  float: right;
+  margin-top: 25px;
 }
 
-/*---About Me Content---*/
-
-.aboutMe_box {
-    margin: 35px auto 90px;
-    padding: 20px 20px;
-    height: 350px;
-    background-color: #ffffff;
-    border: 1.5px solid #dddddd;
-    width: 100%;
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
 }
 
-.aboutMe_title { 
-    color: #4aaaa5; 
-    }
-
-.line {
-    border-top: 3px solid #ddd;
-    padding: 10px;
-    margin-top: 20px;
+nav a:first-child {
+  border-left: 0 none;
 }
 
-.aboutMe_image {
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+  height: 50px;
+}
+
+h3, h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  
+
+   
+    /* transition: transform .2s; -- Zoom Animation referenced from W3 Schools that I just experimented with */
+ 
+}
+
+/* .auth-image:hover {
+    transform: scale(2.5);
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 140px;
     float:left;
-    margin-right: 30px;
+    overflow: hidden;
+} */
+
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
 }
 
-.aboutMe_text {
-    margin-right: 30px;
+#contact-form li {
+  margin-bottom: 10px;
 }
 
-.not_me {
-    font-size: 11px;
-    margin-top: 150px;
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
 }
 
-/*---Footer---*/
-
-.copyright {
-    font-size: 10px;
-    position:fixed;
-    width:100%;
-    color: #dddddd;
-    bottom:0;
-    height:2px;
-    border-top: solid #4aaaa5 6px;
-    background-color: #666666;
-    text-align: center;
-    padding: 17px;
-    width: 100%;
- }
-
-/*---Portfolio Content---*/
-
-.portfolio_box {
-    margin: 25px 90px;
-    margin-left: -100px;
-    padding: 20px 20px;
-    height: 300%;
-    background-color: #ffffff;
-    border: 1.5px solid #dddddd;
-    width: 100%;
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
 }
 
-.placeholder_1 {
-    margin: 10px 10px;
-}
-
-.placeholder_2 {
-    float: right;
-    margin-top: -213px;
-    margin-right: 450px;
-}
-
-.placeholder_3 {
-    margin: 10px 10px;
-}
-
-.placeholder_4 {
-    float: right;
-    margin-top: -213px;
-    margin-right: 450px;
-}
-
-.placeholder_5 {
-    margin: 10px 10px;
-}
-
-/*---Contact Content---*/
-
-/*-----Wasn't sure on how to make a contact box so I took this code from W3 Schools
-       I intend to make it identical to the example shown in due time-----*/
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical
+textarea {
+  height: 200px;
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+/*--Media Queries Assigment--*/
+
+
+@media screen and (max-width: 980px)  {
+  
+#main-container {
+      width: 655px;
+      margin: 0px 10px 0px 30px;
+      padding: 1px;             
+  }   
+
+#masthead {
+      width: 100%;
+      position: relative;
+  }
+
+nav {
+  margin-right: 30px;
+}
+.container {
+  position: relative;
+}
+
+
+@media screen and (max-width: 768px)  {
+
+#main-container {
+    width: 700px;
+    margin: 0px 10px 0px 25px;
+    padding: 1px;             
+}   
+
+nav {
+margin-right: 40px;
+}
+
+#logo {
+  margin-left: 25px;
+  position: relative;
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-top: 40px;
+  position: relative;
 }
 
-/*---Responsive Media Queries--*/
+@media screen and (max-width: 640px) {
 
-/*-----Many elements aren't perfectly aligned.
-       I'm experimenting on a better way to arrange these elements,
-       particularly the poor arrangement of the placeholders and various
-       boxes/text on the 640px screen. Furthermore, I need to practice
-       on wrapping sections in better, more intuitive containers.-----*/
-    
-@media only screen and (max-width: 980px) {
-        
-    .pageWidth {
-        margin: auto;
-        width: 950;
-        max-width: 950px;  
-    }   
-    /*---Index---*/
-    .aboutMe_box {
-        width: 60%; 
-        margin-right: 800px;
-    }
-    /*---Portfolio---*/
-    .portfolio_box {
-        width: 55% ;
-        margin-left: 2px;
-    }
-    .placeholder_2 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px;
-    }
-    .placeholder_4 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px; 
-    }
-    
-    /*---Contact---*/
-    .container {
-        width: 60%;
-    }
-    
+#masthead {
+  position: static;
+} 
 
+#main-container {
+    width: 575px;    
+}   
 
-@media only screen and (max-width: 768px) {
-  
-    .pageWidth {
-        margin: auto;
-        width: 768px;
-        max-width: 768px;  
-    }
+nav {
+  margin: 10px 200px 10px 0px;
+}
 
-    /*---Index---*/
-    .aboutMe_box {
-        width: 90%;
-        margin-left: 15px; 
-    }
+#logo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
 
-    .mainTitle {
-        margin-left: 15px;
-    }
-
-    /*---Portfolio---*/
-    .portfolio_box {
-        width: 90% ;
-        margin-left: 15px;
-    }
-
-    .placeholder_2 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px;
-    }
-
-    .placeholder_4 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px;      
-    }
-
-      /*---Contact---*/
-      .container {
-        width: 90%;
-        margin-left: 15px;
-    }
-    
-@media only screen and (max-width: 640px) {
-
-    .pageWidth {
-        margin: auto;
-        width: 640px;
-        max-width: 640px;  
-    }
-
-    .copyright {
-        margin-top: -10px;
-        margin-left: -15px;
-    }
-
-    /*---Index---*/
-    .mainTitle {
-        margin-left: -40px;
-        width: 640px;
-        text-align: center;
-    }
-
-    .mainHeader {
-        position: static;
-        height: 130px;
-        border-bottom:2.5px solid #dddddd;
-    }
-
-    .links {
-        font-size: 16px;
-        float: right;
-        line-height: 80px;
-        width: 250px;
-        margin-right: 200px;
-        margin-top: -15px; 
-    }
-    
-    .aboutMe_box {
-        width: 80%;
-        margin-left: 30px;
-        height: 680px;
-        margin-top: 20px; 
-    }
-
-    .aboutMe_title {
-        width: 80%;
-        margin-left: 10px;
-    }
-
-    .line {
-        margin-left: 10px;
-        width: 91%;
-    }
-   
-    .aboutMe_image {
-        width: 480px;
-        height: 480px;
-        margin-bottom: 40px;
-        margin-left: 5px;   
-    }
-
-    .aboutMe_text {
-        max-width: 500px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
-    /*---Portfolio---*/
-    .portfolio_box {
-        width: 85% ;
-        margin-left: 15px;
-    }
-
-    .placeholder_2 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px;
-    }
-
-    .placeholder_4 {
-        float: right;
-        margin-top: -213px;
-        margin-right: 10px;      
-    }
-
-     /*---Contact---*/
-     .container {
-        width: 90%;
-        margin-left: 10px;
-    }
+.work {
+  position: relative;
+  float: left;
+  width: 510px;
+  margin: 10px 0px 15px;
+  overflow: auto;
+}
