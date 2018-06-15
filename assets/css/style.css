@@ -283,11 +283,12 @@ margin-right: 40px;
 } 
 
 #main-container {
-    width: 575px;    
+    width: 350px;
+    margin: 20px;
 }   
 
 nav {
-  margin: 10px 200px 10px 0px;
+  margin: 10px 75px 15px 0px;
 }
 
 #logo {
@@ -299,7 +300,7 @@ nav {
 .work {
   position: relative;
   float: left;
-  width: 510px;
+  width: 285px;
   margin: 10px 0px 15px;
   overflow: auto;
 }
