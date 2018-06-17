@@ -108,6 +108,9 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 h3, h2 {
@@ -174,21 +177,17 @@ h3, h2 {
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
-  
-
-   
-    /* transition: transform .2s; -- Zoom Animation referenced from W3 Schools that I just experimented with */
- 
+  transition: transform .2s; /*-- Zoom Animation referenced from W3 Schools, still working on it to make it transition more smoothly */
 }
 
-/* .auth-image:hover {
-    transform: scale(2.5);
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 140px;
-    float:left;
-    overflow: hidden;
-} */
+.auth-image:hover {
+  transform: scale(2.5);
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 140px;
+  float:left;
+  overflow: hidden;
+} 
 
 
 /* contact page */
